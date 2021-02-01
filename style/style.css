@@ -4,17 +4,6 @@ img {
     margin-right: auto;
 }
 
-#cute_toast {
-    width: 100px;
-    height: 100px;
-    z-index: -1;
-    opacity: .5;
-}
-
-#img_credit {
-    opacity: .5;
-}
-
 body {
     background-color: #e6b3be;
     width: 100%
@@ -32,5 +21,36 @@ ul {
 
 li {
     display: inline;
-    width: 30%;
+    float: left;
+    width: 32.5%;
+    text-align: center;
+    padding: 0;
+    border: 1px solid black;
+    background-color: lightskyblue;
+    height: 50px;
+    font-size: 250%;
+    overflow: hidden;
+}
+
+.bg-image {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#content {
+    position: relative;
+}
+
+#cute_toast {
+    z-index: -1;
+    opacity: .5;
+}
+
+#tab2 {
+    border-left: 0;
+    border-right: 0;
 }

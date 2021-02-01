@@ -1,10 +1,11 @@
-function load_image() {
+function load_background_image() {
 
     //create image element and add attributes
     let img = document.createElement('img')
     img.src = '../media/kawaii_toast.png'
     img.alt = 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/2-cute-kawaii-toast-and-toaster-valentina-hramov.jpg'
     img.id = 'cute_toast'
+    img.class = 'bg-image'
 
     //grab div#content
     let content = document.getElementById('content')
@@ -24,12 +25,14 @@ function load_header() {
     let tab1 = document.createElement('li')
     let tab2 = document.createElement('li')
     let tab3 = document.createElement('li')
-    tab1.textContent = 'Tab 1'
-    tab1.style.float = 'left'
-    tab2.textContent = 'Tab 2'
-    tab2.style.float = 'center'
-    tab3.textContent = 'Tab 3'
-    tab3.style.float = 'right'
+
+    //Add id and adjust content of tabs
+    tab1.textContent = 'About'
+    tab1.id = 'tab1'
+    tab2.textContent = 'Menu'
+    tab2.id = 'tab2'
+    tab3.textContent = 'Contact Us'
+    tab3.id = 'tab3'
     ul.appendChild(tab1); ul.appendChild(tab2); ul.appendChild(tab3);
     let content = document.getElementById('content')
     content.appendChild(ul)
@@ -37,7 +40,7 @@ function load_header() {
 
 function page_load() {
     load_header()
-    load_image()
+    load_background_image()
 }
 
 export {
