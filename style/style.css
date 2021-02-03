@@ -20,8 +20,7 @@ p, h1, h2 {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: auto;
 }
 
 li {
@@ -50,10 +49,12 @@ li {
 
 .menu_item {
     margin: auto;
+    margin-top: 25px;
     border: 2px solid black;
     height: auto;
     width: 250px;
     background-color: lightskyblue;
+
 }
 
 #content {
