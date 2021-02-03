@@ -21,7 +21,33 @@ function load_menu_page() {
             menu_items.push(create_menu_item(image_filenames[i], menu_names[i], menu_descriptions[i], item_prices[i]))
         }
     }
-    let div = document.createElement('div')
+    let menu_page = document.createElement('div')
+    menu_page.id = 'menu_page'
+    menu_page.setAttribute('class', 'nav_tab')
+
+    for (let i = 0; i < menu_items.length; i++) {
+
+        //Create div for item container, then elements for each item property
+        let div = document.createElement('div')
+        let img = document.createElement('img')
+        let name = document.createElement('h1')
+        let price = document.createElement('h2')
+        let description = document.createElement('p')
+
+        //Adjust add menu item info to elements
+        img.src = `../media/${menu_items[i].filename}`
+        img.alt = menu_items[i].name
+        name.innerText = menu_items[i].name
+        price.innerText = menu_items[i].price
+        description.innerText = menu_items[i].description
+
+        //Append elements to item container, then item container to menu page div
+        div.appendChild(img); div.appendChild(name); div.appendChild(price); div.appendChild(description);
+        div.setAttribute('class', 'menu_item')
+        menu_page.appendChild(div)
+    }
+
+    return menu_page
 }
 
 export {

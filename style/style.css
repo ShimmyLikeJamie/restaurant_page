@@ -3,6 +3,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     cursor: default;
+    width: 250px;
+    height: 250px;
 }
 
 body {
@@ -11,7 +13,7 @@ body {
     overflow-x: hidden;
 }
 
-p, h1 {
+p, h1, h2 {
     text-align: center;
     cursor: default;
 }
@@ -46,6 +48,14 @@ li {
     transform: translate(-50%, -50%);
 }
 
+.menu_item {
+    margin: auto;
+    border: 2px solid black;
+    height: auto;
+    width: 250px;
+    background-color: lightskyblue;
+}
+
 #content {
     position: relative;
 }
@@ -53,6 +63,8 @@ li {
 #cute_toast {
     z-index: -1;
     opacity: .5;
+    width: 500px;
+    height: 500px;
 }
 
 #menu_tab {
