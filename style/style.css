@@ -33,11 +33,9 @@ li {
     height: 50px;
     font-size: 250%;
     overflow: hidden;
-}
-
-.nav_tab {
     cursor: pointer;
 }
+
 
 .bg-image {
     margin: 0;
