@@ -22,7 +22,15 @@ function load_contact_us_page() {
 
     //Append elements to div
     div.appendChild(ele_name); div.appendChild(ele_email); div.appendChild(ele_blurb);
+    div.appendChild(add_image())   
     return div
+}
+
+function add_image() {
+    let img = document.createElement('img')
+    img.src = '../media/me.jpg'
+    img.id = 'contact_pic'
+    return img
 }
 
 export {
