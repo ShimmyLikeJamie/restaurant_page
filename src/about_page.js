@@ -11,7 +11,7 @@ function load_background_image() {
 
 function load_title() {
     let h1 = document.createElement('h1')
-    h1.innerText = 'Jamie\'s Munchies'
+    h1.innerText = 'Jamie\'s Munchies!'
     return h1
 }
 

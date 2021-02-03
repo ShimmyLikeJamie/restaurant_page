@@ -1,6 +1,7 @@
 import {load_about_page} from './about_page.js'
 import {load_header} from './header_nav.js'
 import {load_menu_page} from './menu_page.js'
+import {load_contact_us_page} from './contact_us_page.js'
 
 let active_color = '#3eaff5'
 let inactive_color = 'lightskyblue'
@@ -19,7 +20,7 @@ content.appendChild(load_header())
 content.appendChild(load_about_page())
 let current_tab = document.getElementById('about_tab')
 
-//Attach function to 'about us' tab
+//Attach functions to tabs
 let about_tab = document.getElementById('about_tab')
 about_tab.onclick = function() {
     clear_page()
@@ -33,5 +34,13 @@ menu_tab.onclick = function() {
     clear_page()
     content.appendChild(load_menu_page())
     current_tab = menu_tab
+    current_tab.style.backgroundColor = active_color
+}
+
+let contact_us_tab = document.getElementById('contact_us_tab')
+contact_us_tab.onclick = function() {
+    clear_page()
+    content.appendChild(load_contact_us_page())
+    current_tab = contact_us_tab
     current_tab.style.backgroundColor = active_color
 }
