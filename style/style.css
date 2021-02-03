@@ -57,6 +57,10 @@ li {
 
 }
 
+#menu_page {
+    margin-top: 25px;
+}
+
 #content {
     position: relative;
 }
