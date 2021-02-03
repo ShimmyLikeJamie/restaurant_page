@@ -1,4 +1,4 @@
-function load_background_image(div) {
+function load_background_image() {
 
     //create image element and add attributes
     let img = document.createElement('img')
@@ -35,10 +35,11 @@ function load_header() {
     return ul
 }
 
-function about_page() {
+function load_about_page() {
     //create div for to hold page contents
     let div = document.createElement('div')
     div.id = 'about_page'
+    div.setAttribute('class', 'nav_tab')
 
     //load info and append to div
     div.appendChild(load_header())
@@ -51,5 +52,5 @@ function about_page() {
 }
 
 export {
-    about_page
+    load_about_page
 }
