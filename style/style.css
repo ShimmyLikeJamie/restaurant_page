@@ -6,7 +6,8 @@ img {
 
 body {
     background-color: #e6b3be;
-    width: 100%
+    width: 100%;
+    overflow-x: hidden;
 }
 
 p, h1 {
@@ -50,7 +51,7 @@ li {
     opacity: .5;
 }
 
-#tab2 {
+#menu_tab {
     border-left: 0;
     border-right: 0;
 }

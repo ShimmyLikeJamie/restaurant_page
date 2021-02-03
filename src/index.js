@@ -1,3 +1,3 @@
-import {page_load} from './page-load.js'
+import {load_about_page} from './about_page.js'
 
-page_load()
+load_about_page()

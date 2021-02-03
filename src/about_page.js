@@ -35,7 +35,7 @@ function load_header() {
     return ul
 }
 
-function load_about_page() {
+function about_page() {
     //create div for to hold page contents
     let div = document.createElement('div')
     div.id = 'about_page'
@@ -51,5 +51,5 @@ function load_about_page() {
 }
 
 export {
-    load_about_page
+    about_page
 }
