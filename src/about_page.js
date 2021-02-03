@@ -9,6 +9,12 @@ function load_background_image() {
     return img
 }
 
+function load_title() {
+    let h1 = document.createElement('h1')
+    h1.innerText = 'Jamie\'s Munchies'
+    return h1
+}
+
 function load_text() {
     let str = "We are a small restaurant inside Vancouver, WA. Check out our menu via the buttons above!\n\nDisclaimer: We don't actually exist"
     let p = document.createElement('p')
@@ -23,6 +29,7 @@ function load_about_page() {
     div.setAttribute('class', 'nav_tab')
 
     //load info and append to div
+    div.appendChild(load_title())
     div.appendChild(load_background_image())
     div.appendChild(load_text())
 

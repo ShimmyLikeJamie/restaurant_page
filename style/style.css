@@ -67,7 +67,6 @@ li {
 
 #cute_toast {
     z-index: -1;
-    opacity: .5;
     width: 500px;
     height: 500px;
 }

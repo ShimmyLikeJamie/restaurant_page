@@ -47,6 +47,7 @@ function load_menu_page() {
         menu_page.appendChild(div)
     }
 
+    menu_page.style.backgroundImage = 'url("../media/kawaii_toast_small.png")'
     return menu_page
 }
 
